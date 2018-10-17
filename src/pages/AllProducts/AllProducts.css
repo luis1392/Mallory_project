@@ -1,0 +1,10 @@
+.btn-search {
+  padding: 15px;
+  border: 1px solid;
+  margin: 0px 15px;
+  display: inline;
+  float: right;
+}
+.container-search {
+  margin: 25px 0px;
+}

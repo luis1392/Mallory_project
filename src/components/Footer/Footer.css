@@ -1,0 +1,26 @@
+footer {
+  padding: 15px;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
+  height: 300px;
+}
+.img-footer {
+  width: 150px;
+  margin: 0px auto;
+  display: block;
+}
+.title-sub-footer {
+  color: #f44336;
+  font-size: 14px;
+}
+.litle-menu-footer {
+  padding-left: 10%;
+}
+.link-footer {
+  color: black;
+  line-height: 30px;
+  text-decoration: none;
+  display: block;
+}
+.link-footer:hover {
+  color: black;
+}

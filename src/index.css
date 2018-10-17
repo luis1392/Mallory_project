@@ -1,0 +1,59 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+}
+main,
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+a:focus,
+a:hover {
+  color: #2196f3;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.products-container > h1,
+.container-categories > span {
+  margin-top: 20px;
+}
+.products-container > span,
+.container-categories > span {
+  color: #999999;
+  display: block;
+}
+.btn-category {
+  padding: 15px 60px;
+  border: 1px solid #2196f3;
+  margin: 30px 30px 20px 30px;
+  color: #2196f3;
+}
+.block-link-category {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.navbar-brand > img {
+  width: 80%;
+}
+.shopping-car,
+.shopping-car:hover {
+  width: 50px;
+  height: 50px;
+  background-color: #ffc107;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  border-radius: 0px;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+.shopping-car > img {
+  width: 28px;
+}
