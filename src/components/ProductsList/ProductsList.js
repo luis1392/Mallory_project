@@ -20,7 +20,6 @@ class ProductsList extends Component {
     );
   };
   componentDidUpdate = prevProps => {
-    console.log(this.props.category);
     if (this.props.category !== prevProps.category) {
       this.handleUpdate(this.props.category);
     }

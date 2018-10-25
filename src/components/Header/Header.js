@@ -5,6 +5,9 @@ import "./Header.css";
 import Logo from "../Logo";
 
 class Header extends Component {
+  handlerClickCart = () => {
+    this.props.onClickOpen(true);
+  };
   render() {
     return (
       <React.Fragment>
@@ -92,7 +95,7 @@ class Header extends Component {
                   </NavLink>
                 </li>
                 <li className="space-nav">|</li>
-                <li className="shopping-car">
+                <li onClick={this.handlerClickCart} className="shopping-car">
                   <img src="/images/shopping-car.png" alt="shopping-car" />
                 </li>
               </ul>

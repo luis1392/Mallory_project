@@ -1,0 +1,37 @@
+.shopping-cart-container {
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(153, 153, 153, 0.5);
+  z-index: 10;
+  right: 0;
+  width: 20%;
+  overflow: scroll;
+}
+.header-cart {
+  background-color: #2196fe;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+.item-cart {
+  padding: 0px 5px 15px 5px;
+  background-color: white;
+}
+.x-btn {
+  color: red;
+  float: right;
+  padding: 5px;
+  cursor: pointer;
+}
+.x-btn-shopping-cart {
+  color: white;
+  float: left;
+  padding: 5px;
+  cursor: pointer;
+}
+.no-items {
+  padding: 15px 5px 15px 5px;
+  background-color: white;
+  margin-bottom: 0px;
+  text-align: center;
+}

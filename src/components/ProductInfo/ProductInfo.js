@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 
 class ProductInfo extends Component {
+  handleClickAddCart = product => {
+    this.props.onClickAddCart(product);
+  };
   render() {
     const { product } = this.props;
     return (
@@ -24,7 +27,12 @@ class ProductInfo extends Component {
                 {product.height}{" "}
               </span>
             </div>
-            <button className="btn btn-shopping-car">Add to Car</button>
+            <button
+              onClick={() => this.handleClickAddCart(product)}
+              className="btn btn-shopping-car"
+            >
+              Add to Car
+            </button>
           </div>
         </div>
       </React.Fragment>

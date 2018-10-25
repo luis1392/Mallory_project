@@ -7,7 +7,11 @@ class Product extends Component {
   state = {
     loading: true,
     error: null,
-    product: null
+    product: null,
+    productCart: null
+  };
+  onClickAddCart = productCart => {
+    this.props.addCart(productCart);
   };
 
   componentDidUpdate = prevProps => {
@@ -53,8 +57,10 @@ class Product extends Component {
           product && (
             <div>
               <ProductImage product={product} />
-
-              <ProductInfo product={product} />
+              <ProductInfo
+                product={product}
+                onClickAddCart={this.onClickAddCart}
+              />
             </div>
           )}
         {error && <p>{error.message}</p>}

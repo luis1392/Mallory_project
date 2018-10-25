@@ -10,10 +10,19 @@ import Category from "../../pages/Category";
 import SingleProduct from "../../pages/SingleProduct";
 
 class App extends Component {
+  state = {
+    product: null
+  };
+  toCart = product => {
+    this.setState({
+      product
+    });
+  };
   render() {
+    const { product } = this.state;
     return (
       <div className="app">
-        <Layout>
+        <Layout product={product}>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
@@ -23,7 +32,9 @@ class App extends Component {
             <Route
               exact
               path="/product/:product_id"
-              component={SingleProduct}
+              render={props => (
+                <SingleProduct toCart={this.toCart} {...props} />
+              )}
             />
           </Switch>
         </Layout>
